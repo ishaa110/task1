@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4.css">
+    <title>Dry Fruit Shop</title>
+</head>
+<body>
+
+    <header>
+        <h1>Dry Fruit Shop</h1>
+        <p>Fresh and Delicious Dry Fruits</p>
+        <div class="icons">
+            <span id="cart-icon" onclick="openCartModal()">🛒</span>
+            <span id="wishlist-icon" onclick="openWishlistModal()">❤️</span>
+        </div>
+    </header>
+
+    <div class="discription" id="descript">
+        <p>
+        Welcome to our Dry Fruits Shop, where health meets indulgence!</p> <p>We take pride in offering a curated selection of premium dry fruits that are not only delicious but also packed with essential nutrients.</p> <p>Explore the richness of nature's bounty and discover the wholesome goodness in every bite.
+        </p>
+    </div>
+    
+    <section class="products">
+        <div class="product" id="product1">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/1/IK/MI/QI/10340478/raw-almond-nuts-500x500.jpeg"
+            alt="Almonds">
+            <h3>Almonds</h3>
+            <p>Rich in nutrients.</p>
+            <div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+        
+        <div class="product" id="product2">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/334141930/ZG/RU/JE/110466240/walnut-kernels-500x500.jpg"
+            alt="Walnuts">
+            <h3>Walnuts</h3>
+            <p>Healthy snack option</p><div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+
+        <div class="product" id="product3">
+            <img src="https://5.imimg.com/data5/XT/PP/LB/SELLER-4500804/w320-cashew-nut-500x500-500x500.jpg"
+            alt="Cashews">
+            <h3>Cashews</h3>
+            <p>Delicious and nutritious</p><div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+
+        <div class="product" id="product4">
+            <img src="https://www.realsimple.com/thmb/fh6xRNkPlQ988xu2V_gNLMBot7I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pistachio-nuts-2000-ea1ce465ae9243acbeb49a75c3b9e807.jpg"
+            alt="Pistachios">
+            <h3>Pistachios</h3>
+            <p>Delicious and nutritious</p><div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+
+        <div class="product" id="product5">
+            <img src="https://t4.ftcdn.net/jpg/06/89/28/35/360_F_689283535_Xa5X0OQyCz7XjDgDHv2ttATvQ603HiHo.jpg"
+            alt="Raisins">
+            <h3>Raisins</h3>
+            <p>Delicious and nutritious</p><div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+
+        <div class="product" id="product6">
+            <img src="https://www.shutterstock.com/image-photo/bowl-fresh-ripe-apricots-leaves-600nw-2118789179.jpg"
+            alt="Apricots">
+            <h3>Apricots</h3>
+            <p>Delicious and nutritious</p><div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+
+        <div class="product" id="product7">
+            <img src="https://media.istockphoto.com/id/152123469/photo/heap-of-tasty-organic-figs-at-local-farmers-market.jpg?s=612x612&w=0&k=20&c=Cr0jltGzOCz85aFoe2dbJv5YbYWbRK5c2eTgjJZO_LY="
+            alt="Fig">
+            <h3>Figs</h3>
+            <p>Delicious and nutritious</p><div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+
+        <div class="product" id="product8">
+            <img src="https://media.istockphoto.com/id/181077887/photo/dates.jpg?s=612x612&w=0&k=20&c=SDwqs0oumCH9P0ZPC__x27r12zGcfDn-Tcakq3FyZVs="
+            alt="Dates">
+            <h3>Dates</h3>
+            <p>Delicious and nutritious</p><div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCartModal()">×</span>
+            <h2>Shopping Cart</h2>
+            <p>Your cart is currently empty.</p>
+        </div>
+    </div>
+
+    <div id="wishlist-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeWishlistModal()">×</span>
+            <h2>Wishlist</h2>
+            <p>Your wishlist is currently empty.</p>
+        </div>
+    </div>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Visit our store or contact us for more information.</p>
+        <p>Address: Shop No.21,Lal Baug Road, Infront of barahate Ground, KeshavNagar,Chinchwad, Pune-33.
+        Contact No.: 5256793754.
+        </p>
+        <button>Contact</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dry Fruit Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
